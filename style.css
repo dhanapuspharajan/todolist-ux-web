@@ -63,11 +63,14 @@
 }
 
 .left-items h1 {
+  display: flex;
+  align-items: center;
   text-align: justify;
   font-size: 3rem;
   font-family: 'Lato', sans-serif;
 }
-span {
+#span {
+  margin-left: 10px;
   color: gray;
   font-weight: lighter;
   font-family: 'Open Sans', sans-serif;
@@ -253,3 +256,311 @@ span {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* for mobile */
+@media screen and (max-width: 480px) {
+  .top-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .items-container {
+    width: 100%;
+  }
+
+  .first-div {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+  }
+  .left-items h1 {
+    display: flex;
+    margin-left: 20px;
+    font-size: 3rem;
+  }
+  /* #span {
+    margin-left: 10px;
+  } */
+  .right-items i {
+    margin-right: 0;
+  }
+
+  .right-items {
+    display: flex;
+  }
+  .cards-div {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card h1 {
+    color: gray;
+  }
+
+  .card > h2 {
+    display: none;
+  }
+  .card > input {
+    display: none;
+  }
+  .card > label {
+    display: none;
+  }
+  .card > hr {
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    width: 350px;
+    justify-content: flex-start;
+    border: 0;
+    border-bottom: 0px;
+    border-right: 0px;
+    height: min-content;
+  }
+
+  .right-items p {
+    display: none;
+  }
+  .right-items i {
+    margin-right: 10px;
+    transform: scale(2);
+    color: orangered;
+  }
+  .right-items i:hover {
+    transform: scale(2.3);
+  }
+
+  .trip-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .trip-card {
+    height: 70vh;
+  }
+
+  .trip-card h2 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+  .trip-card span {
+    position: relative;
+    top: 40vh;
+    transform: scale(1.3);
+  }
+
+  .title h1 {
+    font-size: 3rem;
+    margin: 0%;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  #hr-line1,
+  #hr-line2 {
+    /* width: 65px;
+    color: rgb(211, 187, 187); */
+    display: none;
+  }
+  #back-icon {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    transform: scale(1.3);
+  }
+
+  .back-btn p {
+    display: none;
+  }
+  .trip-card {
+    justify-content: center;
+    width: 90vw;
+  }
+  .trip-card hr {
+    width: 85%;
+  }
+
+  .trip-card span {
+    left: 30%;
+  }
+
+  .pop-up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 80%;
+    left: 10%;
+    top: 40%;
+  }
+
+  .pop-up input {
+    width: 80%;
+  }
+}
+/* for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .first-div {
+    display: flex;
+    margin-top: 6rem;
+    justify-content: space-between;
+  }
+  .left-items h1 {
+    display: inline;
+    font-size: 2.5rem;
+  }
+  .left-items #span {
+    display: inline;
+  }
+  .right-items i {
+    margin-right: 0;
+  }
+
+  .right-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cards-div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  .card {
+    width: 80vw;
+  }
+
+  .trip-container h1 {
+    font-size: 2rem;
+  }
+  .title {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40vw;
+  }
+  #hr-line1,
+  #hr-line2 {
+    width: 65px;
+    color: rgb(211, 187, 187);
+  }
+
+  .trip-card {
+    justify-content: center;
+    width: 90vw;
+  }
+  .trip-card hr {
+    width: 85%;
+  }
+
+  .trip-card span {
+    left: 30%;
+  }
+
+  .pop-up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 50%;
+    left: 25%;
+    top: 40%;
+  }
+
+  .pop-up input {
+    width: 80%;
+  }
+}
+
+/* @media (min-width: 769px) and (max-width: 1024px) {
+  .first-div {
+    display: flex;
+    margin-top: 6rem;
+    justify-content: space-between;
+  }
+  .left-items h1 {
+    display: inline;
+    font-size: 2.5rem;
+  }
+  .left-items span {
+    display: inline;
+  }
+  .right-items i {
+    margin-right: 0;
+  }
+
+  .right-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cards-div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 5vw;
+  }
+
+  .trip-container h1 {
+    font-size: 2rem;
+  }
+  .title {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40vw;
+  }
+  #hr-line1,
+  #hr-line2 {
+    width: 65px;
+    color: rgb(211, 187, 187);
+  }
+
+  .trip-card {
+    justify-content: center;
+    width: 90vw;
+  }
+  .trip-card hr {
+    width: 85%;
+  }
+
+  .trip-card span {
+    left: 30%;
+  }
+
+  .pop-up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 40%;
+    left: 30%;
+    top: 0%;
+  }
+
+  .pop-up input {
+    width: 80%;
+  }
+} */
